@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <title>Dental SPD</title>
 
     <!-- Bootstrap -->
-    <link href="library/css/style.css" rel="stylesheet">
+    <link href="/library/css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,21 +15,21 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
+
   </head>
   <body>
-	
+
 	<div class="fluid-container">
 		<header id="main-header">
 			<div id="top-header" class="clearfix">
 				<div class="col-xs-2 logo-holder">
 					<i class="fa fa-bars hidden-md hidden-lg"></i>
-					<img class="hidden-xs hidden-sm" src="library/images/logo.png" />
+					<img class="hidden-xs hidden-sm" src="/library/images/logo.png" />
 				</div>
 				<div class="col-xs-10 text-right">
 					<div class="user-container">
 						<span class="avatar">
-							<img src="library/images/user-icon.png" />
+							<img src="/library/images/user-icon.png" />
 						</span>
 						<span class="username text-gray">◯◯◯◯◯さん ログイン中</span>
 					</div>
@@ -37,19 +37,19 @@
 			</div>
 		</header>
 	</div>
-	
+
 	<div id="side-menu">
 		<div class="nav-with-label">
 			<ul>
-				<li class="has-sub"><a class="cart" href="#">受注</a></li>
-				<li><a class="editpage" href="#">お問い合わせ掲示板</a></li>
+				<li class="has-sub"><a class="cart" href="../orderreceive/">受注</a></li>
+				<li><a class="editpage" href="../contactlist/">お問い合わせ掲示板</a></li>
 				<li class="active"><a class="question" href="#">ヘルプ</a></li>
 			</ul>
 		</div>
-		
-		<a href="#" class="logout-button">ログアウト</a>
+
+		<a href="../logout/" class="logout-button">ログアウト</a>
 	</div>
-	
+
 	<div class="left-content">
 
 		<ul class="nav nav-tabs">
@@ -58,9 +58,9 @@
 			<li><a data-toggle="tab" href="#tab-3">システム更新情報</a></li>
 			<li><a data-toggle="tab" href="#tab-4">よくある質問</a></li>
 		</ul>
-		
+
 		<div class="tab-content">
-			
+
 			<div id="tab-1" class="tab-pane fade active in">
 				<div class="">
 					<div class="accordion">
@@ -69,20 +69,20 @@
 								<div class="panel-heading">
 									<a data-toggle="collapse" href="#collapse1">事前準備</a>
 								</div>
-								
+
 								<div id="collapse1" class="panel-collapse collapse">
 									<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 								</div>
-								
+
 							</div>
 						</div>
-						
+
 						<div class="panel-group">
 							<div class="panel-default">
 								<div class="panel-heading">
 									<a data-toggle="collapse" href="#collapse2">実際に使ってみよう</a>
 								</div>
-								
+
 								<div id="collapse2" class="panel-collapse collapse in">
 									<p> 在庫登録（棚卸作業）から始めよう</p>
 									<br/>
@@ -90,36 +90,36 @@
 									<p>始めに商品ごとにどのくらい在庫があるのかを把握するために、在庫登録を行います。</p>
 								        <p>&nbsp; ⇒端末版簡単マニュアル　[棚卸メニュー]</p>
 									<p>棚卸作業をすると、出庫作業をした際に、実際の在庫量から減算されるようになりますので、リアルタイムで在庫量がわかるようになります。</p>
-									
+
 									<br />
 									<p class="text-bold">登録がない商品、バーコードがない商品の場合は</p>
 									<p>&nbsp; ⇒端末版簡単マニュアル　[入庫]メニュー＞[新商品登録依頼]機能より登録依頼をします。</p>
-									
+
 									<br />
 									<p class="text-bold">②商品出庫作業（使用済み商品のバーコードスキャン）</p>
-									<p>開封した商品の空箱は捨てずに全て取っておきます。</p>	
+									<p>開封した商品の空箱は捨てずに全て取っておきます。</p>
 									<p>担当者はあらかじめ設定した時間になったら、すべての商品のバーコードを端末でスキャンします。</p>
 									<p>&nbsp; ⇒端末版簡単マニュアル　[出庫メニュー]</p>
-									
+
 									<br />
 									<p class="text-bold">③発注作業</p>
 									<p>「発注（発注履歴から）」、「発注（出庫履歴から）」もしくは在庫量を見ながら、発注を行います。</p>
 									<p>&nbsp; ⇒端末版簡単マニュアル　[発注メニュー]</p>
 									<p>商品を使用したことにより、商品在庫が減少したことで発注が必要になりますから、ここでは、出庫の履歴を見て、発注の必要がある商品を選定し、発注をかけます。</p>
 									<p>　⇒端末版簡単マニュアル　[発注メニュー]</p>
-									
+
 								</div>
-								
+
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
+
 			<div id="tab-2" class="tab-pane fade">
 				tab-2
 			</div>
-			
+
 			<div id="tab-4" class="tab-pane fade">
 				<div class="padding-20">tab-3</div>
 			</div>
@@ -127,16 +127,16 @@
 				<div class="padding-20">tab-4</div>
 			</div>
 
-			
+
 		</div>
-		
+
 	</div>
-	
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="library/js/jquery-3.2.1.min.js"></script>
-    <script src="library/js/bootstrap.min.js"></script>
-	<script src="library/js/jquery-ui-1.9.2.custom.js"></script>
-	<script src="library/js/scripts.js"></script>
-	
+	<script src="/library/js/jquery-3.2.1.min.js"></script>
+    <script src="/library/js/bootstrap.min.js"></script>
+	<script src="/library/js/jquery-ui-1.9.2.custom.js"></script>
+	<script src="/library/js/scripts.js"></script>
+
   </body>
 </html>
