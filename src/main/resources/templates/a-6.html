@@ -43,8 +43,10 @@
 		<div class="nav-with-label">
 			<ul>
 				<li class="active"><a class="cart" href="#">受注</a></li>
-				<li><a class="editpage" href="#">お問い合わせ掲示板</a></li>
-				<li><a class="question" href="#">ヘルプ</a></li>
+<!--
+				<li><a class="editpage" href="../contactlist/">お問い合わせ掲示板</a></li>
+				<li><a class="question" href="../help/">ヘルプ</a></li>
+-->
 			</ul>
 		</div>
 
@@ -96,6 +98,27 @@
 						<label>本店支店区分</label>
 						<select class="form-control">
 							<option>---</option>
+							<option>本店</option>
+							<option>支店</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label>店舗名</label>
+						<input type="text" name="" class="form-control bg-off-white" />
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label>支店名</label>
+						<select class="form-control">
+							<option>---</option>
 							<option>---</option>
 							<option>---</option>
 						</select>
@@ -104,7 +127,14 @@
 
 				<div class="col-sm-4">
 					<div class="form-group">
-						<label>店舗名</label>
+						<label>営業所名</label>
+						<input type="text" name="" class="form-control bg-off-white" />
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label>担当者名</label>
 						<input type="text" name="" class="form-control bg-off-white" />
 					</div>
 				</div>
@@ -137,194 +167,6 @@
 		<!-- buttons -->
 		<div class="clearfix padding-top-20">
 			<button class="btn bg-d-blue text-white btn-sm pull-right">ダウンロード(Excel) <i class="fa fa-download"></i> </button>
-		</div
-
-
-		<!-- Table -->
-		<div class="table-responsive">
-
-			<table class="table table-striped offset-top-20">
-				<thead class="bg-d-blue text-white">
-					<tr>
-						<td class="text-center">受注日</td>
-						<td class="text-center">発注No</td>
-						<td class="text-center">発注元</td>
-						<td class="text-center">担当者名</td>
-						<td class="text-center">商品コード</td>
-						<td class="text-center">商品画像</td>
-						<td class="text-center">商品名</td>
-						<td class="text-center">数量</td>
-						<td class="text-center">単位</td>
-					</tr>
-				</thead>
-				<tbody>
-
-					<tr>
-						<td>20170000</td>
-						<td>0000000</td>
-						<td class="text-center">-------</td>
-						<td class="text-center">-------</td>
-						<td>0036000507065</td>
-						<td class="text-center relative">
-							<img src="/library/images/blank-image-thumb.png" class="img-show" />
-							<div class="tooltip-content">
-								<img src="/library/images/blank-image.png" class="img-responsive" />
-							</div>
-
-						</td>
-						<td class="text-center">ｽﾀｰﾘﾝｸﾞ ﾆﾄﾘﾙ検査用ｸﾞﾛｰﾌﾞ/Sｽﾀｰﾘﾝｸﾞ ﾆ.....</td>
-
-
-						<td class="text-center">00000</td>
-						<td class="text-center">-------</td>
-					</tr>
-
-					<tr>
-						<td>20170000</td>
-						<td>0000000</td>
-						<td class="text-center">-------</td>
-						<td class="text-center">-------</td>
-						<td>0036000507065</td>
-						<td class="text-center relative">
-							<img src="/library/images/blank-image-thumb.png" class="img-show" />
-							<div class="tooltip-content">
-								<img src="/library/images/blank-image.png" class="img-responsive" />
-							</div>
-
-						</td>
-						<td class="text-center">ｽﾀｰﾘﾝｸﾞ ﾆﾄﾘﾙ検査用ｸﾞﾛｰﾌﾞ/Sｽﾀｰﾘﾝｸﾞ ﾆ.....</td>
-
-
-						<td class="text-center">00000</td>
-						<td class="text-center">-------</td>
-					</tr>
-
-					<tr>
-						<td>20170000</td>
-						<td>0000000</td>
-						<td class="text-center">-------</td>
-						<td class="text-center">-------</td>
-						<td>0036000507065</td>
-						<td class="text-center relative">
-							<img src="/library/images/blank-image-thumb.png" class="img-show" />
-							<div class="tooltip-content">
-								<img src="/library/images/blank-image.png" class="img-responsive" />
-							</div>
-
-						</td>
-						<td class="text-center">ｽﾀｰﾘﾝｸﾞ ﾆﾄﾘﾙ検査用ｸﾞﾛｰﾌﾞ/Sｽﾀｰﾘﾝｸﾞ ﾆ.....</td>
-
-
-						<td class="text-center">00000</td>
-						<td class="text-center">-------</td>
-					</tr>
-
-					<tr>
-						<td>20170000</td>
-						<td>0000000</td>
-						<td class="text-center">-------</td>
-						<td class="text-center">-------</td>
-						<td>0036000507065</td>
-						<td class="text-center relative">
-							<img src="/library/images/blank-image-thumb.png" class="img-show" />
-							<div class="tooltip-content">
-								<img src="/library/images/blank-image.png" class="img-responsive" />
-							</div>
-
-						</td>
-						<td class="text-center">ｽﾀｰﾘﾝｸﾞ ﾆﾄﾘﾙ検査用ｸﾞﾛｰﾌﾞ/Sｽﾀｰﾘﾝｸﾞ ﾆ.....</td>
-
-
-						<td class="text-center">00000</td>
-						<td class="text-center">-------</td>
-					</tr>
-
-					<tr>
-						<td>20170000</td>
-						<td>0000000</td>
-						<td class="text-center">-------</td>
-						<td class="text-center">-------</td>
-						<td>0036000507065</td>
-						<td class="text-center relative">
-							<img src="/library/images/blank-image-thumb.png" class="img-show" />
-							<div class="tooltip-content">
-								<img src="/library/images/blank-image.png" class="img-responsive" />
-							</div>
-
-						</td>
-						<td class="text-center">ｽﾀｰﾘﾝｸﾞ ﾆﾄﾘﾙ検査用ｸﾞﾛｰﾌﾞ/Sｽﾀｰﾘﾝｸﾞ ﾆ.....</td>
-
-
-						<td class="text-center">00000</td>
-						<td class="text-center">-------</td>
-					</tr>
-
-					<tr>
-						<td>20170000</td>
-						<td>0000000</td>
-						<td class="text-center">-------</td>
-						<td class="text-center">-------</td>
-						<td>0036000507065</td>
-						<td class="text-center relative">
-							<img src="/library/images/blank-image-thumb.png" class="img-show" />
-							<div class="tooltip-content">
-								<img src="/library/images/blank-image.png" class="img-responsive" />
-							</div>
-
-						</td>
-						<td class="text-center">ｽﾀｰﾘﾝｸﾞ ﾆﾄﾘﾙ検査用ｸﾞﾛｰﾌﾞ/Sｽﾀｰﾘﾝｸﾞ ﾆ.....</td>
-
-
-						<td class="text-center">00000</td>
-						<td class="text-center">-------</td>
-					</tr>
-
-					<tr>
-						<td>20170000</td>
-						<td>0000000</td>
-						<td class="text-center">-------</td>
-						<td class="text-center">-------</td>
-						<td>0036000507065</td>
-						<td class="text-center relative">
-							<img src="/library/images/blank-image-thumb.png" class="img-show" />
-							<div class="tooltip-content">
-								<img src="/library/images/blank-image.png" class="img-responsive" />
-							</div>
-
-						</td>
-						<td class="text-center">ｽﾀｰﾘﾝｸﾞ ﾆﾄﾘﾙ検査用ｸﾞﾛｰﾌﾞ/Sｽﾀｰﾘﾝｸﾞ ﾆ.....</td>
-
-
-						<td class="text-center">00000</td>
-						<td class="text-center">-------</td>
-					</tr>
-
-					<tr>
-						<td>20170000</td>
-						<td>0000000</td>
-						<td class="text-center">-------</td>
-						<td class="text-center">-------</td>
-						<td>0036000507065</td>
-						<td class="text-center relative">
-							<img src="/library/images/blank-image-thumb.png" class="img-show" />
-							<div class="tooltip-content">
-								<img src="/library/images/blank-image.png" class="img-responsive" />
-							</div>
-
-						</td>
-						<td class="text-center">ｽﾀｰﾘﾝｸﾞ ﾆﾄﾘﾙ検査用ｸﾞﾛｰﾌﾞ/Sｽﾀｰﾘﾝｸﾞ ﾆ.....</td>
-
-
-						<td class="text-center">00000</td>
-						<td class="text-center">-------</td>
-					</tr>
-
-				</tbody>
-			</table>
-
-		</div>
-
-
 		</div>
 	</div>
 

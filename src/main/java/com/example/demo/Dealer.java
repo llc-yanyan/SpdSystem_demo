@@ -42,6 +42,11 @@ public class Dealer {
     		return "b-1";
     }
 
+    @RequestMapping("dealer/orderreceivelist/")
+    public String orderreceivelist(Model model) {
+    		return "b-2";
+    }
+
     @RequestMapping("dealer/contactlist/")
     public String contactlist(Model model) {
     		return "c-1";
